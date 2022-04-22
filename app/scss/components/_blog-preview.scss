@@ -1,0 +1,48 @@
+.blog-preview {
+    padding-top: 25px;
+    width: 380px;
+    height: 465px;
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("../images/blog-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 50%);
+        z-index: -1;
+    }
+
+    &__date {
+        font-size: 14px;
+        line-height: 2;
+        padding-right: 20px;
+        align-self: flex-end;
+    }
+
+    &__link {
+        padding: 15px 30px;
+        font-weight: 500;
+        color: #fff;
+        font-size: 17px;
+        line-height: 1.4;
+        background-color: transparent;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: $active;
+        }
+    }
+}

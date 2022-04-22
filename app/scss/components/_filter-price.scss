@@ -1,0 +1,13 @@
+.filter-price {
+    &__label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    &__btn {
+        background-color: $active;
+        padding: 6px 10px;
+        border-radius: 4px;
+        color: #fff;
+    }
+}

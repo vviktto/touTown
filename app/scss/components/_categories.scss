@@ -1,0 +1,29 @@
+.categories {
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .shop-category {
+        width: 47%;
+    }
+}
+
+@media (max-width: 768px) {
+    .categories {
+        .shop-category {
+            height: 289px;
+        }
+    }
+}
+
+@media (max-width: 568px) {
+    .categories {
+        .shop-category {
+            width: 100%;
+            height: 235px;
+        }
+    }
+}

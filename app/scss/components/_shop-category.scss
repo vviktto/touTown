@@ -1,0 +1,41 @@
+.shop-category {
+    width: 630px;
+    height: 514px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    padding: 28px;
+
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        z-index: -1;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 16px;
+        color: #fff;
+    }
+
+    &__icon {
+        fill: #fff;
+    }
+}

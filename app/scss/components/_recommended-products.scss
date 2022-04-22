@@ -1,0 +1,21 @@
+.recommended-products {
+    .filter-list {
+        margin-bottom: 60px;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .shop-category {
+        width: 590px;
+        height: 480px;
+    }
+
+    .product-card {
+        width: 286px;
+    }
+}

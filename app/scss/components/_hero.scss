@@ -1,0 +1,145 @@
+.hero {
+    padding: 220px 0 75px;
+    background-image: url("../images/header-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    &__item {
+        margin-left: 70px;
+    }
+
+    &__title {
+        font-family: "Jura", sans-serif;
+        font-weight: 400;
+        font-size: 41px;
+        line-height: 1.2;
+        max-width: 600px;
+        margin-bottom: 25px;
+    }
+
+    &__text {
+        font-size: 19px;
+        margin-bottom: 40px;
+        max-width: 450px;
+    }
+
+    &__slider {
+        z-index: 1;
+    }
+
+    &__wrapper {
+        margin-bottom: 120px;
+    }
+
+    .hero__pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .swiper-pagination-bullet {
+            width: 19px;
+            height: 19px;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 19px;
+            color: #fff;
+            background-color: transparent;
+            opacity: 1;
+
+            &:not(:last-child) {
+                margin-right: 40px;
+            }
+        }
+
+        .swiper-pagination-bullet-active {
+            font-size: 0;
+            width: 19px;
+            height: 19px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+    }
+
+    &__btn-icon {
+        fill: #fff;
+    }
+
+    &__btn-prev,
+    &__btn-next {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        width: 48px;
+        height: 48px;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+        opacity: 0.3;
+        bottom: 0;
+        cursor: pointer;
+        z-index: 10;
+        transition: all 0.3s;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &__btn-prev {
+        left: 0;
+    }
+
+    &__btn-next {
+        right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background-image: url("../images/header-smallbg.png");
+        position: relative;
+        padding: 140px 0 75px;
+
+        &::after {
+            position: absolute;
+            content: "";
+            background: linear-gradient(180deg, #000000 9%, rgba(0, 0, 0, 0) 100%);
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        &__item {
+            margin-left: 0;
+            padding-bottom: 150px;
+        }
+
+        &__title {
+            max-width: 100%;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            font-size: 16px;
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
+
+        &__wrapper {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        &__btn-prev,
+        &__btn-next {
+            display: none;
+        }
+    }
+}

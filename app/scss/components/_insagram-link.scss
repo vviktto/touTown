@@ -1,0 +1,30 @@
+.insagram-link {
+    display: block;
+    width: 285px;
+    height: 410px;
+    padding: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    overflow: hidden;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        margin-left: 80px;
+    }
+
+    &__icon {
+        fill: #fff;
+        margin-right: 15px;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 1.6;
+    }
+}

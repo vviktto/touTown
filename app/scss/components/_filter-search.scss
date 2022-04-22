@@ -1,0 +1,22 @@
+.filter-search {
+    &__form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__input {
+        background-color: #272727;
+        padding: 10px;
+        border-radius: 6px;
+        width: 80%;
+        outline: transparent;
+    }
+
+    &__btn {
+        width: 44px;
+        height: 44px;
+        stroke: #fff;
+        fill: none;
+    }
+}

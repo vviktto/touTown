@@ -1,0 +1,67 @@
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "vars";
+@import "global";
+@import "components/header";
+@import "components/hero";
+@import "components/top";
+@import "components/product-card";
+@import "components/shop-category";
+@import "components/insagram-link";
+@import "components/subscribe";
+@import "components/filter-list";
+@import "components/recommended-products";
+@import "components/about";
+@import "components/blog-preview";
+@import "components/blog";
+@import "components/categories";
+@import "components/subcategories";
+@import "components/subcategory-card";
+@import "components/catalog";
+@import "components/pagination";
+@import "components/filter";
+@import "components/filter-search";
+@import "components/filter-price";
+@import "components/filter-length";
+@import "components/filter-category";
+@import "components/product";
+@import "components/feature";
+@import "components/recomended-products";
+@import "components/order";
+@import "components/footer";
+
+.irs--flat {
+    height: 50px;
+}
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+    display: none;
+}
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single {
+    display: none;
+}
+.irs--flat .irs-line {
+    background-color: #fff;
+    border-radius: 0;
+}
+.irs--flat .irs-bar {
+    background-color: #ff3232;
+}
+.irs--flat .irs-handle {
+    width: 18px;
+    background-color: $active;
+}
+.irs--flat .irs-handle > i:first-child {
+    background-color: $active;
+}
+.irs--flat .irs-handle.state_hover > i:first-child,
+.irs--flat .irs-handle:hover > i:first-child {
+    background-color: $active;
+}
+
+
+
+

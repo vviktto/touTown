@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интрнет-магазин TouTown</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__item">
+                    <nav class="header__nav">
+                        <div class="header__nav-wrapper">
+                            <button class="header__btn header__btn--close-menu" type="button">
+                                <svg class="header__icon header__icon--close-menu" width="23" height="23">
+                                    <use xlink:href="images/sprite.svg#angle-left"></use>
+                                </svg>
+                            </button>
+                            <button class="header__btn header__btn--mail header__nav-btn" type="button">
+                                <svg class="header__icon header__icon--mail" width="23" height="23">
+                                    <use xlink:href="images/sprite.svg#mail"></use>
+                                </svg>
+                            </button>
+                            <div class="header__search header__nav-search">
+                                <input class="header__search-input" type="text" placeholder="Поиск">
+                                <svg class="header__icon header__icon--search" width="23" height="23">
+                                    <use xlink:href="images/sprite.svg#search"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <ul class="header__nav-list header__nav-list--catalog">
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Кухонные ножи TUOTOWN</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Складные ножи TUOTOWN</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Кухонные ножи QXF</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Точильные камни</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Наборы для BBQ</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Кухонные принадлежности</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Туристические товары</a>
+                            </li>
+                        </ul>
+                        <ul class="header__nav-list header__nav-list--info">
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Новости</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">О компании</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Контакты</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Как проехать</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="header__btn header__btn--menu" type="button">
+                        <svg class="header__icon header__icon--menu" width="23" height="23">
+                            <use xlink:href="images/sprite.svg#menu"></use>
+                        </svg>
+                    </button>
+                    <a class="header__link header__location" href="#">
+                        <svg class="header__icon header__icon--location" width="23" height="23">
+                            <use xlink:href="images/sprite.svg#location"></use>
+                        </svg>
+                    </a>
+                    <a class="header__phone" href="tel:88001201117">
+                        <span class="header__phone-content">8 800 120-11-17</span>
+                        <svg class="header__icon header__icon--phone" width="23" height="23">
+                            <use xlink:href="images/sprite.svg#phone"></use>
+                        </svg>
+                    </a>
+                </div>
+                <a class="logo" href="#">
+                    <img src="images/logo.jpg" alt="Логотип">
+                </a>
+                <div class="header__item">
+                    <a class="header__btn header__btn--bag" href="#">
+                        <svg class="header__icon header__icon--bag" width="23" height="23">
+                            <use xlink:href="images/sprite.svg#bag"></use>
+                        </svg>
+                    </a>
+                    <button class="header__btn header__btn--mail" type="button">
+                        <svg class="header__icon header__icon--mail" width="23" height="23">
+                            <use xlink:href="images/sprite.svg#mail"></use>
+                        </svg>
+                    </button>
+                    <div class="header__search">
+                        <input class="header__search-input" type="text" placeholder="Поиск">
+                        <svg class="header__icon header__icon--search" width="23" height="23">
+                            <use xlink:href="images/sprite.svg#search"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="section hero">
+            <div class="container">
+                <div class="swiper hero__slider">
+                    <div class="swiper-wrapper hero__wrapper">
+                        <div class="swiper-slide hero__slide">
+                            <div class="hero__item">
+                                <h2 class="hero__title">
+                                    Исключительное качество без компромиссов
+                                </h2>
+                                <p class="hero__text">
+                                    Ножи «Tuotown» – это главный инструмент поваров и секрет кулинарного мастерства
+                                </p>
+                                <a class="hero__link btn" href="#">ПОДРОБНЕЕ</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide hero__slide">
+                            <div class="swiper-slide hero__slide">
+                                <div class="hero__item">
+                                    <h2 class="hero__title">
+                                        Исключительное качество без компромиссов
+                                    </h2>
+                                    <p class="hero__text">
+                                        Ножи «Tuotown» – это главный инструмент поваров и секрет кулинарного мастерства
+                                    </p>
+                                    <a class="hero__link btn" href="#">ПОДРОБНЕЕ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide hero__slide">
+                            <div class="swiper-slide hero__slide">
+                                <div class="hero__item">
+                                    <h2 class="hero__title">
+                                        Исключительное качество без компромиссов
+                                    </h2>
+                                    <p class="hero__text">
+                                        Ножи «Tuotown» – это главный инструмент поваров и секрет кулинарного мастерства
+                                    </p>
+                                    <a class="hero__link btn" href="#">ПОДРОБНЕЕ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide hero__slide">
+                            <div class="swiper-slide hero__slide">
+                                <div class="hero__item">
+                                    <h2 class="hero__title">
+                                        Исключительное качество без компромиссов
+                                    </h2>
+                                    <p class="hero__text">
+                                        Ножи «Tuotown» – это главный инструмент поваров и секрет кулинарного мастерства
+                                    </p>
+                                    <a class="hero__link btn" href="#">ПОДРОБНЕЕ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination hero__pagination"></div>
+
+                    <div class="hero__btn-prev">
+                        <svg class="hero__btn-icon" width="30" height="30">
+                            <use xlink:href="images/sprite.svg#arrow-left"></use>
+                        </svg>
+                    </div>
+                    <div class="hero__btn-next">
+                        <svg class="hero__btn-icon" width="30" height="30">
+                            <use xlink:href="images/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section recommended-products">
+            <div class="container">
+                <ul class="filter-list">
+                    <li class="filter-list__item">
+                        <button class="filter-list__btn" type="button" data-filter=".category-a">
+                            <svg class="filter-list__btn-icon" width="43" height="46">
+                                <use xlink:href="images/sprite.svg#kitchen-knife"></use>
+                            </svg>
+                            <span class="filter-list__btn-name">Кухонные ножи</span>
+                        </button>
+                    </li>
+                    <li class="filter-list__item">
+                        <button class="filter-list__btn" type="button" data-filter=".category-b">
+                            <svg class="filter-list__btn-icon" width="54" height="46">
+                                <use xlink:href="images/sprite.svg#jackknife"></use>
+                            </svg>
+                            <span class="filter-list__btn-name">Складные ножи</span>
+                        </button>
+                    </li>
+                    <li class="filter-list__item">
+                        <button class="filter-list__btn" type="button" data-filter=".category-c">
+                            <svg class="filter-list__btn-icon" width="46" height="46">
+                                <use xlink:href="images/sprite.svg#sharpener"></use>
+                            </svg>
+                            <span class="filter-list__btn-name">Точилки для ножей</span>
+                        </button>
+                    </li>
+                    <li class="filter-list__item">
+                        <button class="filter-list__btn" type="button" data-filter="all">
+                            <svg class="filter-list__btn-icon" width="46" height="46">
+                                <use xlink:href="images/sprite.svg#kitchenaccessories"></use>
+                            </svg>
+                            <span class="filter-list__btn-name">Аксессуары для кухни</span>
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="recommended-products__content">
+
+                    <a class="shop-category" href="#" style="background-image: url('images/categories/1.jpg');">
+                        <div class="shop-category__item">
+                            <h3 class="shop-category__title">Познакомьтесь с коллекцией ножей TUOTOWN</h3>
+                            <svg class="shop-category__icon" width="25" height="25">
+                                <use xlink:href="images/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <article class="product-card product-card--new mix category-a">
+                        <div class="product-card__content">
+                            <img class="product-card__img" src="images/products/card/1.png" alt="">
+                            <button class="product-card__tocart" type="button">
+                                <svg class="product-card__tocart-icon product-card__tocart-icon--plus" width="24"
+                                    height="24">
+                                    <use xlink:href="images/sprite.svg#plus"></use>
+                                </svg>
+                                <svg class="product-card__tocart-icon product-card__tocart-icon--bag" width="24"
+                                    height="24">
+                                    <use xlink:href="images/sprite.svg#bag"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="product-card__info">
+                            <a class="product-card__name" href="#">Складной нож SQ01-B</a>
+                            <span class="product-card__price">850 грн.</span>
+                            <span class="product-card__new">Новинка</span>
+                        </div>
+                    </article>
+
+                    <article class="product-card product-card mix category-b">
+                        <div class="product-card__content">
+                            <img class="product-card__img" src="images/products/card/2.png" alt="">
+                            <button class="product-card__tocart" type="button">
+                                <svg class="product-card__tocart-icon product-card__tocart-icon--plus" width="24"
+                                    height="24">
+                                    <use xlink:href="images/sprite.svg#plus"></use>
+                                </svg>
+                                <svg class="product-card__tocart-icon product-card__tocart-icon--bag" width="24"
+                                    height="24">
+                                    <use xlink:href="images/sprite.svg#bag"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="product-card__info">
+                            <a class="product-card__name" href="#">Складной нож JJ001-TUO-B</a>
+                            <span class="product-card__price">12 850 грн.</span>
+                            <span class="product-card__new">Новинка</span>
+                        </div>
+                    </article>
+
+                    <article class="product-card product-card mix category-c">
+                        <div class="product-card__content">
+                            <img class="product-card__img" src="images/products/card/1.png" alt="">
+                            <button class="product-card__tocart" type="button">
+                                <svg class="product-card__tocart-icon product-card__tocart-icon--plus" width="24"
+                                    height="24">
+                                    <use xlink:href="images/sprite.svg#plus"></use>
+                                </svg>
+                                <svg class="product-card__tocart-icon product-card__tocart-icon--bag" width="24"
+                                    height="24">
+                                    <use xlink:href="images/sprite.svg#bag"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="product-card__info">
+                            <a class="product-card__name" href="#">Складной нож SQ01-B</a>
+                            <span class="product-card__price">850 грн.</span>
+                            <span class="product-card__new">Новинка</span>
+                        </div>
+                    </article>
+
+                    <article class="product-card product-card mix category-a">
+                        <div class="product-card__content">
+                            <img class="product-card__img" src="images/products/card/2.png" alt="">
+                            <button class="product-card__tocart" type="button">
+                                <svg class="product-card__tocart-icon product-card__tocart-icon--plus" width="24"
+                                    height="24">
+                                    <use xlink:href="images/sprite.svg#plus"></use>
+                                </svg>
+                                <svg class="product-card__tocart-icon product-card__tocart-icon--bag" width="24"
+                                    height="24">
+                                    <use xlink:href="images/sprite.svg#bag"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="product-card__info">
+                            <a class="product-card__name" href="#">Складной нож JJ001-TUO-B</a>
+                            <span class="product-card__price">12 850 грн.</span>
+                            <span class="product-card__new">Новинка</span>
+                        </div>
+                    </article>
+
+                    <a class="insagram-link" href="#" style="background-image: url('images/instagram-bg.jpg');">
+                        <div class="insagram-link__wrapper">
+                            <svg class="insagram-link__icon" width="23" height="23">
+                                <use xlink:href="images/sprite.svg#instagram"></use>
+                            </svg>
+                            <h3 class="insagram-link__title">instagram</h3>
+                        </div>
+                    </a>
+
+                    <article class="product-card product-card--new mix category-b">
+                        <div class="product-card__content">
+                            <img class="product-card__img" src="images/products/card/1.png" alt="">
+                            <button class="product-card__tocart" type="button">
+                                <svg class="product-card__tocart-icon product-card__tocart-icon--plus" width="24"
+                                    height="24">
+                                    <use xlink:href="images/sprite.svg#plus"></use>
+                                </svg>
+                                <svg class="product-card__tocart-icon product-card__tocart-icon--bag" width="24"
+                                    height="24">
+                                    <use xlink:href="images/sprite.svg#bag"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="product-card__info">
+                            <a class="product-card__name" href="#">Складной нож SQ01-B</a>
+                            <span class="product-card__price">850 грн.</span>
+                            <span class="product-card__new">Новинка</span>
+                        </div>
+                    </article>
+
+                    <div class="subscribe">
+                        <h3 class="subscribe__title">Узнавайте первым о новинках и новостях</h3>
+                        <form class="subscribe__form" action="#">
+                            <label class="subscribe__label">
+                                Ваш e-mail
+                                <input class="subscribe__input" name="subscribe__input" type="text" placeholder="Ваш e-mail" required>
+                            </label>
+                            <button class="subscribe__btn" type="submit">
+                                <svg class="subscribe__btn-icon" width="20" height="20">
+                                    <use xlink:href="images/sprite.svg#angle-right"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+
+                    <article class="product-card product-card mix category-c">
+                        <div class="product-card__content">
+                            <img class="product-card__img" src="images/products/card/1.png" alt="">
+                            <button class="product-card__tocart" type="button">
+                                <svg class="product-card__tocart-icon product-card__tocart-icon--plus" width="24"
+                                    height="24">
+                                    <use xlink:href="images/sprite.svg#plus"></use>
+                                </svg>
+                                <svg class="product-card__tocart-icon product-card__tocart-icon--bag" width="24"
+                                    height="24">
+                                    <use xlink:href="images/sprite.svg#bag"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="product-card__info">
+                            <a class="product-card__name" href="#">Складной нож SQ01-B</a>
+                            <span class="product-card__price">850 грн.</span>
+                            <span class="product-card__new">Новинка</span>
+                        </div>
+                    </article>
+
+                    <article class="product-card product-card--new mix category-a">
+                        <div class="product-card__content">
+                            <img class="product-card__img" src="images/products/card/2.png" alt="">
+                            <button class="product-card__tocart" type="button">
+                                <svg class="product-card__tocart-icon product-card__tocart-icon--plus" width="24"
+                                    height="24">
+                                    <use xlink:href="images/sprite.svg#plus"></use>
+                                </svg>
+                                <svg class="product-card__tocart-icon product-card__tocart-icon--bag" width="24"
+                                    height="24">
+                                    <use xlink:href="images/sprite.svg#bag"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="product-card__info">
+                            <a class="product-card__name" href="#">Складной нож SQ01-B</a>
+                            <span class="product-card__price">850 грн.</span>
+                            <span class="product-card__new">Новинка</span>
+                        </div>
+                    </article>
+
+                    <article class="product-card product-card mix category-b">
+                        <div class="product-card__content">
+                            <img class="product-card__img" src="images/products/card/1.png" alt="">
+                            <button class="product-card__tocart" type="button">
+                                <svg class="product-card__tocart-icon product-card__tocart-icon--plus" width="24"
+                                    height="24">
+                                    <use xlink:href="images/sprite.svg#plus"></use>
+                                </svg>
+                                <svg class="product-card__tocart-icon product-card__tocart-icon--bag" width="24"
+                                    height="24">
+                                    <use xlink:href="images/sprite.svg#bag"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="product-card__info">
+                            <a class="product-card__name" href="#">Складной нож SQ01-B</a>
+                            <span class="product-card__price">850 грн.</span>
+                            <span class="product-card__new">Новинка</span>
+                        </div>
+                    </article>
+
+                    <article class="product-card product-card mix category-c">
+                        <div class="product-card__content">
+                            <img class="product-card__img" src="images/products/card/2.png" alt="">
+                            <button class="product-card__tocart" type="button">
+                                <svg class="product-card__tocart-icon product-card__tocart-icon--plus" width="24"
+                                    height="24">
+                                    <use xlink:href="images/sprite.svg#plus"></use>
+                                </svg>
+                                <svg class="product-card__tocart-icon product-card__tocart-icon--bag" width="24"
+                                    height="24">
+                                    <use xlink:href="images/sprite.svg#bag"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="product-card__info">
+                            <a class="product-card__name" href="#">Складной нож SQ01-B</a>
+                            <span class="product-card__price">850 грн.</span>
+                            <span class="product-card__new">Новинка</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section about">
+            <div class="container">
+                <img class="about__img about__img--left" src="images/about-1.jpg" alt="">
+                <h2 class="title about__title">«Tuotown» – легендарные ножи, создающие шедевры</h2>
+                <p class="about__text">
+                    Компания «Tuotown» – эксклюзивный представитель профессиональных кухонных ножей, изготовленных лучшими мастерами Восточной Азии с применением передового европейского оборудования и современных материалов. Они отличаются идеальным балансом и фантастической остротой. Сочетают в себе вековые традиции и новейшие разработки. Также предлагаем широкий ассортимент сопутствующих товаров.
+                </p>
+                <img class="about__img about__img--right" src="images/about-2.jpg" alt="">
+                <p class="about__text">
+                    Истинная красота ножа — совершённая функциональность и визуальная гармония. Этот предмет издревле сопутствовал человеку: от зари цивилизации до сегодняшних дней. На протяжении всей истории человечества он был верным помощником, незаменимым инструментом и грозным оружием. Предлагаем изделия Hi-end качества по доступным ценам настоящим ценителям японских ножей.
+                </p>
+                <p class="about__text">
+                    Отличительной чертой нашего интернет-магазина являются уникальные торговые предложения, эксклюзивность продукции, неизменно высокое качество и выгодные цены. Осуществляем продажи элитных японских кухонных ножей для профессионалов и любителей. В обширной ассортиментной линейке представлены изделия для различных потребностей и любого бюджета — от столовых приборов до шеф-ножей.
+                </p>
+                <h3 class="title about__subtitle">Ножи «Tuotown» – это главный инструмент поваров и секрет кулинарного мастерства</h3>
+                <p class="about__text">
+                    Осуществляем продажи элитных японских кухонных ножей для профессионалов и любителей. В обширной ассортиментной линейке представлены изделия для различных потребностей и любого бюджета — от столовых приборов до шеф-ножей.
+                </p>
+            </div>
+        </section>
+
+        <section class="blog">
+            <div class="container">
+                <h2 class="title blog__title">Всё самое интересное о ножах</h2>
+                <div class="blog__inner">
+                    <article class="blog-preview" style="background-image: url('images/blog-1.jpg');">
+                        <time class="blog-preview__date" datetime="2021-08-04T19:24">4 августа 2021 19:24</time>
+                        <a class="blog-preview__link" href="#">
+                            Традиционные виды японских кухонных ножей
+                        </a>
+                    </article>
+
+                    <article class="blog-preview" style="background-image: url('images/blog-2.jpg');">
+                        <time class="blog-preview__date" datetime="2021-08-04T19:24">4 августа 2021 19:24</time>
+                        <a class="blog-preview__link" href="#">
+                            Всемирная история режущих клинков — взгляд в прошлое
+                        </a>
+                    </article>
+
+                    <article class="blog-preview" style="background-image: url('images/blog-3.jpg');">
+                        <time class="blog-preview__date" datetime="2021-08-04T19:24">4 августа 2021 19:24</time>
+                        <a class="blog-preview__link" href="#">
+                            Как ухаживать за японскими кухонными ножами?
+                        </a>
+                    </article>
+                </div>
+
+                <div class="subscribe">
+                    <h3 class="subscribe__title">Узнавайте первым о новинках и новостях</h3>
+                    <form class="subscribe__form" action="#">
+                        <label class="subscribe__label">
+                            Ваш e-mail
+                            <input class="subscribe__input" name="subscribe__input" type="text" placeholder="Ваш e-mail" required>
+                        </label>
+                        <button class="subscribe__btn" type="submit">
+                            <svg class="subscribe__btn-icon" width="20" height="20">
+                                <use xlink:href="images/sprite.svg#angle-right"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__item">
+                        <div class="footer__wrapper">
+                            <a class="logo footer__top-logo" href="#">
+                                <img src="images/logo.jpg" alt="Логотип">
+                            </a>
+                            <span class="footer__top-tagline">
+                                легендарные ножи, создающие шедевры
+                            </span>
+                        </div>
+                        <p class="footer__text">
+                            Компания «Tuotown» – эксклюзивный представитель профессиональных кухонных ножей,
+                            изготовленных лучшими мастерами Восточной Азии с применением передового европейского
+                            оборудования и современных материалов.
+                        </p>
+                        <p class="footer__text">
+                            Они отличаются идеальным балансом и фантастической остротой. Сочетают в себе вековые
+                            традиции и новейшие разработки. Также предлагаем широкий ассортимент сопутствующих товаров.
+                        </p>
+                    </div>
+
+                    <div class="footer__item">
+                        <h2 class="footer__title footer__title--information">Информация</h2>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Главная</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Новости</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">О компании</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                        <h2 class="footer__title footer__title--catalog">Каталог</h2>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Кухонные ножи</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Складные ножи</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Точилки для ножей</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Аксессуары</a>
+                            </li>
+                        </ul>
+
+                        <h2 class="footer__title footer__title--social">Мы в соцсетях</h2>
+                        <ul class="footer__social">
+                            <li class="footer__social-item">
+                                <a class="footer__social-link" href="#">
+                                    <svg class="footer__social-icon" width="14" height="14">
+                                        <use xlink:href="images/sprite.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a class="footer__social-link" href="#">
+                                    <svg class="footer__social-icon" width="14" height="14">
+                                        <use xlink:href="images/sprite.svg#vk"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a class="footer__social-link" href="#">
+                                    <svg class="footer__social-icon" width="14" height="14">
+                                        <use xlink:href="images/sprite.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a class="footer__social-link" href="#">
+                                    <svg class="footer__social-icon" width="14" height="14">
+                                        <use xlink:href="images/sprite.svg#youtube"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <address class="footer__contacts">
+                        <h2 class="footer__title footer__title--contacts">Контактная информация</h2>
+                        <ul class="footer__contacts-list">
+                            <li class="footer__contacts-item">
+                                <a class="footer__contacts-link footer__contacts-link--phone" href="tel:80631201117">+8
+                                    (063) 120-11-17</a>
+                            </li>
+                            <li class="footer__contacts-item">
+                                <a class="footer__contacts-link footer__contacts-link--mail"
+                                    href="mailto:tuotown@gmail.com">tuotown@gmail.com</a>
+                            </li>
+                            <li class="footer__contacts-item">
+                                08:00 — 18:00, ежедневно
+                            </li>
+                            <li class="footer__contacts-item">
+                                Украина, Киев, ул. Большая Васильковская,
+                                д13, вход А
+                            </li>
+                        </ul>
+                        <a class="metrics" href="#">
+                            <img class="metrics__img" src="images/matrics.jpg" alt="">
+                        </a>
+                    </address>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__bottom-inner">
+                    <p class="footer__bottom-copy">
+                        TUOTOWN © 2021 Торговая марка TUOTOWN зарегистрирована. Все права защищены и принадлежат
+                        правообладателям.
+                    </p>
+                    <a class="logo" href="#">
+                        <img src="images/logo.jpg" alt="Логотип">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

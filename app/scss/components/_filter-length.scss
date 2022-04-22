@@ -1,0 +1,32 @@
+.filter-length {
+    &__label {
+        display: flex;
+        justify-content: space-between;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__input {
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        position: absolute;
+
+        &:checked + .filter-length__checkbox {
+            background-image: url("../images/icons/mark.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    }
+
+    &__checkbox {
+        width: 16px;
+        height: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        position: absolute;
+        margin-left: -20px;
+    }
+}

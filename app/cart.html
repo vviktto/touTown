@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заголовок</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__item">
+                    <nav class="header__nav">
+                        <div class="header__nav-wrapper">
+                            <button class="header__btn header__btn--close-menu" type="button">
+                                <svg class="header__icon header__icon--close-menu" width="23" height="23">
+                                    <use xlink:href="images/sprite.svg#angle-left"></use>
+                                </svg>
+                            </button>
+                            <button class="header__btn header__btn--mail header__nav-btn" type="button">
+                                <svg class="header__icon header__icon--mail" width="23" height="23">
+                                    <use xlink:href="images/sprite.svg#mail"></use>
+                                </svg>
+                            </button>
+                            <div class="header__search header__nav-search">
+                                <input class="header__search-input" type="text" placeholder="Поиск">
+                                <svg class="header__icon header__icon--search" width="23" height="23">
+                                    <use xlink:href="images/sprite.svg#search"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <ul class="header__nav-list header__nav-list--catalog">
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Кухонные ножи TUOTOWN</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Складные ножи TUOTOWN</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Кухонные ножи QXF</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Точильные камни</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Наборы для BBQ</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Кухонные принадлежности</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Туристические товары</a>
+                            </li>
+                        </ul>
+                        <ul class="header__nav-list header__nav-list--info">
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Новости</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">О компании</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Контакты</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Как проехать</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="header__btn header__btn--menu" type="button">
+                        <svg class="header__icon header__icon--menu" width="23" height="23">
+                            <use xlink:href="images/sprite.svg#menu"></use>
+                        </svg>
+                    </button>
+                    <a class="header__link header__location" href="#">
+                        <svg class="header__icon header__icon--location" width="23" height="23">
+                            <use xlink:href="images/sprite.svg#location"></use>
+                        </svg>
+                    </a>
+                    <a class="header__phone" href="tel:88001201117">
+                        <span class="header__phone-content">8 800 120-11-17</span>
+                        <svg class="header__icon header__icon--phone" width="23" height="23">
+                            <use xlink:href="images/sprite.svg#phone"></use>
+                        </svg>
+                    </a>
+                </div>
+                <a class="logo" href="#">
+                    <img src="images/logo.jpg" alt="Логотип">
+                </a>
+                <div class="header__item">
+                    <a class="header__btn header__btn--bag" href="#">
+                        <svg class="header__icon header__icon--bag" width="23" height="23">
+                            <use xlink:href="images/sprite.svg#bag"></use>
+                        </svg>
+                    </a>
+                    <button class="header__btn header__btn--mail" type="button">
+                        <svg class="header__icon header__icon--mail" width="23" height="23">
+                            <use xlink:href="images/sprite.svg#mail"></use>
+                        </svg>
+                    </button>
+                    <div class="header__search">
+                        <input class="header__search-input" type="text" placeholder="Поиск">
+                        <svg class="header__icon header__icon--search" width="23" height="23">
+                            <use xlink:href="images/sprite.svg#search"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="main">
+        
+        <section class="order">
+            <div class="container">
+                <h1 class="order__title">Корзина</h1>
+                <div class="order__products">
+                    <div class="order__products-item">
+                        <img class="order__products-img" src="images/cart-product.png" alt="" width="70" height="70">
+                        <a class="order__products-link" href="#">Нож Knight light C653</a>
+                        <select class="order__products-select" id="order-select">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        <span class="order__products-price">744 тыс.р.</span>
+                        <button class="order__products-delete" type="button" id="product-delete">
+                            <svg class="order__products-icon" width="20" height="20">
+                                <use xlink:href="images/sprite.svg#close"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="order__products-item">
+                        <img class="order__products-img" src="images/cart-product.png" alt="" width="70" height="70">
+                        <a class="order__products-link" href="#">Нож Knight light C653</a>
+                        <select class="order__products-select" id="order-select">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        <span class="order__products-price">744 тыс.р.</span>
+                        <button class="order__products-delete" type="button" id="product-delete">
+                            <svg class="order__products-icon" width="20" height="20">
+                                <use xlink:href="images/sprite.svg#close"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="order__products-total">
+                        <h3 class="order__products-sum">К оплате:</h3>
+                        <span class="order__products-num">747,9 тыс.р.</span>
+                    </div>
+                </div>
+
+                 <ul class="order__details">
+                    <li class="order__details-item order__details-item--delivery">
+                        <a class="order__details-title" href="#">Доставка</a>
+                        <p class="order__details-text">Киев, 25.10 бесплатно</p>
+                    </li>
+                    <li class="order__details-item order__details-item--payment">
+                        <a class="order__details-title" href="#">Оплата</a>
+                        <p class="order__details-text">Самый удобный для Вас: Картой на сайте</p>
+                    </li>
+                </ul>
+
+                <div class="order__info">
+                    <h3 class="order__info-title">Для подтверждения заказа - введите ваши данные и мы перезвоним вам</h3>
+                    <div class="order__info-inner">
+                        <form class="order__info-form">
+                            <label class="order__info-lael">
+                                Получатель
+                                <input class="order__info-input" type="text" placeholder="Имя Фамилия" required>
+                            </label>
+                            <label class="order__info-lael">
+                                Мобильный телефон
+                                <input class="order__info-input" type="tel" placeholder="+3 (___) ___-__-__" required>
+                            </label>
+                            <label class="order__info-lael">
+                                E-mail
+                                <input class="order__info-input" type="email" placeholder="Ваша почта">
+                            </label>
+                        </form>
+                        <div class="order__info-item">
+                            <p class="order__info-text">
+                                Нажимая «Выбрать способ доставки», подтверждаю, что я ознакомлен с условиями <a href="#">Публичного договора оферты</a> и <a href="#">Политикой конфиденциальности</a>, а также согласен получать информационную рассылку
+                            </p>
+                            <button class="order__info-btn" type="button">Отправить форму</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subscribe">
+                    <h3 class="subscribe__title">Узнавайте первым о новинках и новостях</h3>
+                    <form class="subscribe__form" action="#">
+                        <label class="subscribe__label">
+                            Ваш e-mail
+                            <input class="subscribe__input" name="subscribe__input" type="text" placeholder="Ваш e-mail" required>
+                        </label>
+                        <button class="subscribe__btn" type="submit">
+                            <svg class="subscribe__btn-icon" width="20" height="20">
+                                <use xlink:href="images/sprite.svg#angle-right"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <!-- <a class="shop-category" href="#" style="background-image: url('images/categories/1.jpg');">
+        <div class="shop-category__item">
+            <h3 class="shop-category__title">Познакомьтесь с коллекцией ножей TUOTOWN</h3>
+            <svg class="shop-category__icon" width="25" height="25">
+                <use xlink:href="images/sprite.svg#arrow-right"></use>
+            </svg>
+        </div>
+    </a>
+
+    <a class="insagram-link" href="#" style="background-image: url('images/instagram-bg.jpg');">
+        <div class="insagram-link__wrapper">
+            <svg class="insagram-link__icon" width="23" height="23">
+                <use xlink:href="images/sprite.svg#instagram"></use>
+            </svg>
+            <h3 class="insagram-link__title">instagram</h3>
+        </div>
+    </a>
+
+    <div class="subscribe">
+        <h3 class="subscribe__title">Узнавайте первым о новинках и новостях</h3>
+        <form class="subscribe__form" action="#">
+            <label class="subscribe__label">
+                Ваш e-mail
+                <input class="subscribe__input" name="subscribe__input" type="text" placeholder="Ваш e-mail" required>
+            </label>
+            <button class="subscribe__btn" type="submit">
+                <svg class="subscribe__btn-icon" width="20" height="20">
+                    <use xlink:href="images/sprite.svg#angle-right"></use>
+                </svg>
+            </button>
+        </form>
+    </div>
+
+    <article class="product-card product-card--new">
+        <div class="product-card__content">
+            <img class="product-card__img" src="images/products/card/2.png" alt="">
+            <button class="product-card__toorder" type="button">
+                <svg class="product-card__toorder-icon product-card__toorder-icon--plus" width="24"
+                    height="24">
+                    <use xlink:href="images/sprite.svg#plus"></use>
+                </svg>
+                <svg class="product-card__toorder-icon product-card__toorder-icon--bag" width="24"
+                    height="24">
+                    <use xlink:href="images/sprite.svg#bag"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="product-card__info">
+            <a class="product-card__name" href="#">Складной нож SQ01-B</a>
+            <span class="product-card__price">850 грн.</span>
+            <span class="product-card__new">Новинка</span>
+        </div>
+    </article> -->
+
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__item">
+                        <div class="footer__wrapper">
+                            <a class="logo footer__top-logo" href="#">
+                                <img src="images/logo.jpg" alt="Логотип">
+                            </a>
+                            <span class="footer__top-tagline">
+                                легендарные ножи, создающие шедевры
+                            </span>
+                        </div>
+                        <p class="footer__text">
+                            Компания «Tuotown» – эксклюзивный представитель профессиональных кухонных ножей,
+                            изготовленных лучшими мастерами Восточной Азии с применением передового европейского
+                            оборудования и современных материалов.
+                        </p>
+                        <p class="footer__text">
+                            Они отличаются идеальным балансом и фантастической остротой. Сочетают в себе вековые
+                            традиции и новейшие разработки. Также предлагаем широкий ассортимент сопутствующих товаров.
+                        </p>
+                    </div>
+
+                    <div class="footer__item">
+                        <h2 class="footer__title footer__title--information">Информация</h2>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Главная</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Новости</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">О компании</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                        <h2 class="footer__title footer__title--catalog">Каталог</h2>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Кухонные ножи</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Складные ножи</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Точилки для ножей</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Аксессуары</a>
+                            </li>
+                        </ul>
+
+                        <h2 class="footer__title footer__title--social">Мы в соцсетях</h2>
+                        <ul class="footer__social">
+                            <li class="footer__social-item">
+                                <a class="footer__social-link" href="#">
+                                    <svg class="footer__social-icon" width="14" height="14">
+                                        <use xlink:href="images/sprite.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a class="footer__social-link" href="#">
+                                    <svg class="footer__social-icon" width="14" height="14">
+                                        <use xlink:href="images/sprite.svg#vk"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a class="footer__social-link" href="#">
+                                    <svg class="footer__social-icon" width="14" height="14">
+                                        <use xlink:href="images/sprite.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a class="footer__social-link" href="#">
+                                    <svg class="footer__social-icon" width="14" height="14">
+                                        <use xlink:href="images/sprite.svg#youtube"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <address class="footer__contacts">
+                        <h2 class="footer__title footer__title--contacts">Контактная информация</h2>
+                        <ul class="footer__contacts-list">
+                            <li class="footer__contacts-item">
+                                <a class="footer__contacts-link footer__contacts-link--phone" href="tel:80631201117">+8
+                                    (063) 120-11-17</a>
+                            </li>
+                            <li class="footer__contacts-item">
+                                <a class="footer__contacts-link footer__contacts-link--mail"
+                                    href="mailto:tuotown@gmail.com">tuotown@gmail.com</a>
+                            </li>
+                            <li class="footer__contacts-item">
+                                08:00 — 18:00, ежедневно
+                            </li>
+                            <li class="footer__contacts-item">
+                                Украина, Киев, ул. Большая Васильковская,
+                                д13, вход А
+                            </li>
+                        </ul>
+                        <a class="metrics" href="#">
+                            <img class="metrics__img" src="images/matrics.jpg" alt="">
+                        </a>
+                    </address>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__bottom-inner">
+                    <p class="footer__bottom-copy">
+                        TUOTOWN © 2021 Торговая марка TUOTOWN зарегистрирована. Все права защищены и принадлежат правообладателям.
+                    </p>
+                    <a class="logo" href="#">
+                        <img src="images/logo.jpg" alt="Логотип">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

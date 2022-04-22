@@ -1,0 +1,63 @@
+.subscribe {
+    display: block;
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+
+    &__title {
+        font-family: "Jura", sans-serif;
+        font-weight: 500;
+        font-size: 27px;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    &__form {
+        display: inline-flex;
+        align-items: center;
+        width: 280px;
+        height: 60px;
+        background-color: #272727;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    &__label {
+        font-size: 0;
+    }
+
+    &__label,
+    &__input {
+        height: 100%;
+        background-color: transparent;
+    }
+
+    &__input {
+        padding: 20px 0 20px 25px;
+        font-size: 15px;
+        outline: transparent;
+
+        &::placeholder {
+            font-size: 15px;
+            color: #fff;
+            opacity: 0.5;
+        }
+    }
+
+    &__btn {
+        fill: #fff;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+    }
+}
+
+@media (max-width: 576px) {
+    .subscribe {
+        &__title {
+            font-size: 22px;
+        }
+    }
+}

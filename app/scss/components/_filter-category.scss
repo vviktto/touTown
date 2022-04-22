@@ -1,0 +1,31 @@
+.filter-category {
+    &__label {
+        display: block;
+        cursor: pointer;
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__input {
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        position: absolute;
+
+        &:checked + .filter-category__checkbox {
+            background-color: $active;
+        }
+    }
+
+    &__checkbox {
+        background-color: $dark-light;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 10px;
+        border-radius: 5px;
+    }
+}
